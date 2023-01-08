@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.DetailFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/image_detail"
+        android:layout_marginTop="250dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_status_code_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold"
+        android:textSize="40sp"
+        android:textColor="#E80707"
+        android:layout_marginTop="15dp"
+        tools:text="100"
+        android:layout_marginStart="180dp"
+        app:layout_constraintTop_toBottomOf="@id/image_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_name_detail"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="italic|bold"
+        android:padding="10dp"
+        tools:text="NAME"
+        android:textColor="#F80606"
+        app:layout_constraintTop_toBottomOf= "@id/txt_status_code_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</FrameLayout>
